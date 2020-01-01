@@ -21,6 +21,10 @@ app.get('', (req, res) => {
   })
 })
 
+app.get('/photoList', (req, res) => {
+  res.render('photoList')
+})
+
 app.listen(3004, () => {
-  console.log('Sever started!!!')
+  console.log('Sever started on port 3004!!!')
 })
